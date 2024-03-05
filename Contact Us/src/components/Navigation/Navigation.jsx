@@ -7,9 +7,9 @@ const Navigation = () => {
         <img src="/images/Frame 2 1.png" alt="logo" />
       </div>
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li href="#">Home</li>
+        <li href="#">About</li>
+        <li href="#">Contact</li>
       </ul>
     </nav>
   );
