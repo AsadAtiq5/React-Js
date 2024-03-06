@@ -4,10 +4,8 @@ const path = require("path");
 
 const PORT = process.env.PORT || 5001;
 
-// Serve static files from the public/images directory
 app.use("/images", express.static(path.join(__dirname, "public/images")));
 
-// Route to serve data in the specified format
 app.get("/api/menu", (req, res) => {
   const menu = [
     {
@@ -56,7 +54,6 @@ app.get("/api/menu", (req, res) => {
   res.json(menu);
 });
 
-// Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
